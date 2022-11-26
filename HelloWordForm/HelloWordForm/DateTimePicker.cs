@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace HelloWordForm
 {
-    public partial class Form1 : Form
+    public partial class DateTimePicker : Form
     {
-        public Form1()
+        public DateTimePicker()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void DateSelectedHandler(object sender, EventArgs e)
         {
-
+            var selectedDateTime = dateTimePicker1.Value;
+            var dayOfWeek = selectedDateTime.DayOfWeek;
+            MessageBox.Show("Day Of Week : " + dayOfWeek.ToString());
         }
     }
 }

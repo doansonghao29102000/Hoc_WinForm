@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HelloWordForm
 {
-    public partial class Form1 : Form
+    public partial class ListView : Form
     {
-        public Form1()
+        public ListView()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

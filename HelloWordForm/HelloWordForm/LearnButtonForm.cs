@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace HelloWordForm
 {
-    public partial class Form1 : Form
+    public partial class LearnButtonForm : Form
     {
-        public Form1()
+        public LearnButtonForm()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnLoginClick(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Bạn đã nhấn nút đăng nhập");
         }
     }
 }

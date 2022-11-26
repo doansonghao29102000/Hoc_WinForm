@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace HelloWordForm
 {
-    public partial class Form1 : Form
+    public partial class ColorDialog : Form
     {
-        public Form1()
+        public ColorDialog()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ChangeColorHandler(object sender, EventArgs e)
         {
-
+            colorDialog1.ShowDialog();
+            var selectedColor = colorDialog1.Color;
+            this.BackColor= selectedColor;
         }
     }
 }
